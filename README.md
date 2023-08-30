@@ -1,5 +1,7 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://PawsAndPixels.github.io/pui-hw-sadeh`
 
 Repository link: `add the URL to this repository`
+
+
