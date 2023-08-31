@@ -2,6 +2,6 @@
 
 Deployed website: `https://PawsAndPixels.github.io/pui-hw-sadeh`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/PawsAndPixels/pui-hw-sadeh`
 
 
