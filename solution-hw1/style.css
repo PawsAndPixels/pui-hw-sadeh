@@ -105,3 +105,260 @@ a{
 .cart-line{
     width: 600px;
 }
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/54956bc9e9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <a href="#"
+        ><img alt="bun bun bake shop logo" src="images/logo/logo-01.svg"
+      /></a>
+      <div class="navbar">
+        <div class="nav-row">
+          <a href="#"><span class="highlight">Products</span></a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <div id="banner">Our hand-made cinnamon rolls</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <button id="mode-toggle">
+          <i class="fa-solid fa-moon"></i> Switch to Dark Mode
+        </button>
+      </div>
+    </div>
+
+    <div class="container gallery-wrapper">
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="original cinnamon roll picture"
+            class="product-image"
+            src="images/products/original-cinnamon-roll.jpg"
+          />
+          <p class="name">Original cinnamon roll</p>
+          <p class="price">$2.49</p></a
+        >
+        <div class="rating-buttons" data-product-id="1">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="apple cinnamon roll picture"
+            class="product-image"
+            src="images/products/apple-cinnamon-roll.jpg"
+          />
+          <p class="name">Apple cinnamon roll</p>
+          <p class="price">$3.49</p>
+        </a>
+        <div class="rating-buttons" data-product-id="2">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="raisin cinnamon roll picture"
+            class="product-image"
+            src="images/products/raisin-cinnamon-roll.jpg"
+          />
+          <p class="name">Raisin cinnamon roll</p>
+          <p class="price">$2.99</p>
+        </a>
+        <div class="rating-buttons" data-product-id="3">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="walnut cinnamon roll picture"
+            class="product-image"
+            src="images/products/walnut-cinnamon-roll.jpg"
+          />
+          <p class="name">Walnut cinnamon roll</p>
+          <p class="price">$3.49</p>
+        </a>
+        <div class="rating-buttons" data-product-id="4">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="double chocolate cinnamon roll picture"
+            class="product-image"
+            src="images/products/double-chocolate-cinnamon-roll.jpg"
+          />
+          <p class="name">Double-chocolate cinnamon roll</p>
+          <p class="price">$3.99</p>
+        </a>
+        <div class="rating-buttons" data-product-id="5">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <a class="gallery-item" href="product.html">
+          <img
+            alt="strawberry cinnamon roll picture"
+            class="product-image"
+            src="images/products/strawberry-cinnamon-roll.jpg"
+          />
+          <p class="name">Strawberry cinnamon roll</p>
+          <p class="price">$3.99</p>
+        </a>
+        <div class="rating-buttons" data-product-id="6">
+          <button class="like-button">👍 <span class="count">0</span></button>
+          <button class="dislike-button">
+            👎 <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="darkmode.js"></script>
+  </body>
+</html>
+
+style.css:
+body {
+  font-family: Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.darkmode-link {
+  color: white;
+}
+
+.darkmode {
+  background-color: grey;
+  color: white;
+}
+
+p,
+select,
+button {
+  font-size: 20px;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  display: flex;
+}
+
+.navbar a {
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+div#banner {
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.product-image {
+  border: 3px solid black;
+}
+
+.nav-wrapper {
+  display: flex;
+  text-align: right;
+}
+
+.nav-wrapper img {
+  flex: 0 0 auto;
+  width: 350px;
+  margin-right: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar a {
+  margin: 30px;
+}
+
+.nav-row {
+  padding: 30px;
+  border-bottom: 5px solid black;
+}
+
+div#banner {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.like-button,
+.dislike-button {
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
