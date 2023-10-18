@@ -1,3 +1,24 @@
+// Contains base information on rolls
+
+let basePrice = 2.49; // Default base price
+
+// Base information glazing
+let glazingPrices = {
+    "Original": 0.00, //2.49,
+    "Sugar milk": 0.00, //2.99,
+    "Vanilla milk": 0.50, //3.49,
+    "Double chocolate": 1.50 //3.99
+};
+
+// Base information about packs
+let packSize = {
+    "1": 1,
+    "3": 3,
+    "6": 6,
+    "12": 12
+};
+
+// Base information about rolls
 const rolls = {
     "Original": {
         "basePrice": 2.49,

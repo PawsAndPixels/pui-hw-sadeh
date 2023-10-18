@@ -21,10 +21,10 @@ calculatePrice(newRoll) //don't think this is correct
 */
 const cartSet = new Set();
 
-    function addNewRoll(rollType, rollGlazing, packSize, basePrice, imageURL){
-    const cart = new Cart(rollType, rollGlazing, packSize, basePrice, imageURL);
-    cartSet.add(cart);
-    return cart;
+function addNewRoll(rollType, rollGlazing, packSize, basePrice, imageURL){
+  const cart = new Cart(rollType, rollGlazing, packSize, basePrice, imageURL);
+  cartSet.add(cart);
+  return cart;
 }
 
 let glazingPrices = {
