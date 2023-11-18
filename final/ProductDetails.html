@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
+
+  </head>
+
+  <body> <!--when page loads, initialize elements -->
+    <header>
+      <nav class="outer-nav-box">
+        <a href="./index.html">
+          <img class="logo" src="../images/logo.png" alt="logo" width="400">
+        </a>
+        <div class="inner-nav-box">
+          <div class="nav-box">
+            <h1><span class="current-page">PRODUCTS</span></h1>
+            <h1><a href="./ShoppingCart.html">CART</a></h1>
+          </div>
+          <hr> <!--horizontal line divider-->
+          <h0 class="product-type"></h0>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <section>
+        <div class="product-detail-box">
+          <img class="product-detail-image">
+
+          <div class="inner-detail-box">
+            <p class="product-customization">KikiReadsComics
+              Handmade crafts inspired by all things cute <3.</p>
+            <div class="glazing">
+              <p>Glazing:</p>
+              <select name="glazing" id="glazingOptions" style="width: 300px;">
+              </select>
+            </div>
+
+            <div class="pack-size">
+              <p>Pack size:</p>
+              <select name="size" id="size" style="width: 300px;">
+              </select>
+            
+            </div>
+
+            <div class="center">
+              <p class="product-detail-price">$2.49</p>
+              <button onClick="addToCartClicked()" class="button">Add To Cart</button>
+            </div>
+
+            <!-- <div class="detailsPrice">
+                    <p class="indvPrice">$2.49</p>
+                    <button onClick="addToCartClicked()" class="addToCart"> Add To Cart</button>
+                  </div> -->
+
+          </div>
+      </section>
+    </main>
+      <footer>
+        <p> Copyright 2022 - Ice Cream Dreams</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+<script defer type="text/javascript" src="./JS/RollsData.js"></script>
+<script defer type="text/javascript" src="./JS/Roll.js"></script>
+<script defer type="text/javascript" src="./JS/Cart.js"></script>
+<script defer type="text/javascript" src="./JS/ShoppingCart.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="outer-nav-box">
+      <a href="./index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" alt="logo" width="400">
+      </a>
+      <div class="inner-nav-box">
+        <div class="nav-box">
+
+          <h1><a href="./index.html">PRODUCTS</a></h1>
+          <h1><span class="current-page">CART</span></h1>
+        </div>
+        <hr> <!--horizontal line divider-->
+        <h0>Our hand-made cinnamon rolls</h0>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="rollContainer">
+      <template id="cart-template">
+        <div class="cart-roll-item">
+          <div class="cart-item">
+            <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg"
+              alt="original-cinnamon-roll" width="200">
+            <p class="remove-product">Remove</p>
+            <div class="product-description">
+              <p class="roll-type"></p>
+              <p class="glazing-type"></p>
+              <p class="pack-size"></p>
+            </div>
+            <p class="base-price"></p>
+          </div>
+        </div>
+      </template>
+      </div>
+
+      <hr class="cart-line">
+      <div class="center">
+        <p class="cart-total">Total:</p>
+        <button class="button">Checkout</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
