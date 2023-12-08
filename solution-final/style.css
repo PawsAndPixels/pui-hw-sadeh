@@ -135,6 +135,18 @@
   }
 }
 
+.inner-detail-box {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  column-gap: 100px;
+  line-height: 100px;
+  /*CHANGED*/
+  width: 900px;
+  /*CHANGED*/
+  flex-direction: row;
+  justify-content: right;
+}
+
 .right {
   text-align: right;
   margin: auto;
@@ -525,4 +537,34 @@ footer {
 /* Optional: Add hover effects or other styles as needed */
 .rounded-icon:hover {
   background-color: #f9dfe0; /* Replace with your desired hover background color */
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faq-question {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  margin: 10px 0;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  width: 48%; /* Adjust as needed */
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.plus-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
