@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--makes website responsive-->
-  <meta charset="UTF-8">
-  <title>Kiki Reads Comics</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--makes website responsive-->
+    <meta charset="UTF-8">
+    <title>Kiki Reads Comics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
+  </head>
 
-  <title>Product Gallery</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <body> <!--when page loads, initialize elements -->
+    <div class="dashboard-container">
+      <header>
+        <div class="header">
+          <!--  <nav class="nav">
+                <a href="./index.html">
+                  <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
 
-  <script defer type="text/javascript" src="./JS/RollsData.js"></script>
-  <script defer type="text/javascript" src="./JS/Roll.js"></script>
-  <script defer type="text/javascript" src="./JS/Cart.js"></script>
-  <script defer type="text/javascript" src="./JS/ProductDetails.js"></script>
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </header>
 
-
-</head>
-
-<body> <!--when page loads, initialize elements -->
-  <header>
-    <nav class="outer-nav-box">
-      <a href="./index.html">
-        <img class="logo" src="../images/logo.png" alt="logo" width="400">
-          <ul>
-            <li><a href="#homeref">HOME</a></li>
-            <li><a href="#aboutref">ABOUT</a></li>
-            <li><a href="#dpref">DESIGNS/PRODUCTS</a></li>    
-            <li><a href="#eventsref">EVENTS</a></li>  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="./index.html"><img id="logo" src="images/logo.png" alt="logo" width="400px"></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Message Me</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </a>
-
-
-
-
-      <div class="inner-nav-box">
-        <div class="nav-box">
-          <h1><span class="current-page">PRODUCTS</span></h1>
-          <h1><a href="#eventsref">CART</a></h1>
-        </div>
-        <hr> <!--horizontal line divider-->
-        <h0 class="product-type"></h0>
       </div>
     </nav>
-  </header>
 
 
-  <main>
-    <section>
-      <div class="product-detail-box">
-        <img class="product-detail-image">
-
+    <main style="height: 800px">
+      <h1>Maker's Story</h1>
+      <div class="maker-story">
+        <img id="maker-illustration" src="images/maker.jpg" alt="Hannah at her booth" width="400px"></a>
         <div class="inner-detail-box">
-          <p class="product-customization">KikiReadsComics
-            Handmade crafts inspired by all things cute <3.</p>
-          <div class="glazing">
-            <p>Description:</p>
-            <select name="glazing" id="glazingOptions" style="width: 300px;">
-            </select>
-          </div>
-
-          <div class="pack-size">
-            <p>Pack size:</p>
-            <select name="size" id="size" style="width: 300px;">
-            </select>
-          
-          </div>
-
-          <div class="center">
-            <p class="product-detail-price">$2.49</p>
-            <button onClick="addToCartClicked()" class="button">Add To Cart</button>
-          </div>
-
-          <!-- <div class="detailsPrice">
-                  <p class="indvPrice">$2.49</p>
-                  <button onClick="addToCartClicked()" class="addToCart"> Add To Cart</button>
-                </div> -->
-
+          <p class="description-label">Description:</p>
+          <p>KikiReadsComics is a shop that embodies my passion for creative expression and love of all things cute!
+            Titled after my nickname, Kiki, it is a place where I can share my polymer clay creations with the world.</p>
+            
+            <p>I first began making kawaii charms with polymer clay five years ago, but at the time I wasn't making them to
+            sell. Polymer clay was just something that made me happy and kept me busy. As I got better at it, my friends
+            began to ask me if I had an Etsy and if I would be willing to sell some of my creations to them. Hence,
+            KikiReadsComics was born! I love the experience I have selling online, and now I am able to sell at local
+            craft fairs!</p>
+            
+            <p>There's a lot of hard work that goes into producing high quality charms and packaging them for
+            delivery. However, it's been so much fun and I'm thankful for the experience. By running this shop I want to
+            use my creations to spread happiness around the world, one charm at a time!!</p>
         </div>
-    </section>
-  </main>
-</body>
+      </div>
+    </main>
+
+    <footer>
+      <p> Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
+      <div class="rounded-icons">
+        <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
+          <img src="images/ig.svg" alt="Instagram Logo">
+        </a>
+        <div class="rounded-icon">
+          <a href="https://www.facebook.com/kikireadscomics">
+            <img src="images/fb.png" alt="Facebook Logo">
+        </div>
+        <div class="rounded-icon">
+          <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
+            <img src="images/etsy.png" alt="Etsy Logo">
+        </div>
+    </footer>
+  </body>
 
 </html>

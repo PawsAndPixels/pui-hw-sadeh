@@ -1,129 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--makes website responsive-->
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <!--makes website responsive-->
+    <meta charset="UTF-8" />
     <title>Kiki Reads Comics</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
   </head>
-  
+
   <body>
     <div class="dashboard-container">
-        <header>
-          <div class="header">
-           <!--  <nav class="nav">
-               <a href="./index.html">
-                <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
-                <div class="eyes">
-                  <div class="eye">
-                    <div class="ball"></div>
-                  </div>
-
-                  <div class="eye">
-                    <div class="ball"></div>
-                  </div>
-                </div>  
-
-                        
-          </div>
-            <!--<h0>Kiki Reads Comics</h0>-->
-            <!-- </nav> -->
-          <!--  <div class="nav-box">
-            <h1><span class= "current-page">DESIGNS/PRODUCTS</span></h1>
-              <h1><a href="./ShoppingCart.html">EVENTS</a></h1>
+      <header>
+        <h1>Kiki Reads Comics</h1>
+        <!-- Top Banner with cat -->
+        <div class="header">
+          <!--  <nav class="nav">
+                <a href="./index.html">
+                  <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
             </div>
-            -->
-            <hr> <!--horizontal line divider-->
-          </div>
-        </header>
-     
 
-        <div class="pink-header">
-          <nav class="navigation">
-            <div class="nav-links">
-              <a href="./index.html">
-                <img class="logo" src="../images/logo.png" alt="logo" width="400px"></a>
-              <ul class="navUl">
-                <li><a href="#homeref">HOME</a></li>
-                <li><a href="#aboutref">ABOUT</a></li>
-                <li><a href="#dpref">DESIGNS/PRODUCTS</a></li>    
-                <li><a href="#eventsref">EVENTS</a></li>  
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Email Me</a></li>
               </ul>
-              
-            </div>
-          </nav>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main style="height: 800px">
+      <div class="booth container">
+        <img
+          id="maker-illustration"
+          src="images/booth.jpg"
+          alt="Hannah at her booth"
+          width="400px"
+        />
+        <div class="inner-detail-box">
+          <a
+            href="gallery.html"
+            class="nav-item btn rounded-pill rounded-buttons btn-secondary nav-link"
+          >
+            Explore Designs
+          </a>
+
+          <button class="btn rounded-pill rounded-buttons btn-secondary">
+            Explore Designs
+          </button>
+
+          <button class="btn rounded-pill rounded-buttons btn-secondary">
+            About the Maker
+          </button>
+        </div>
+        <div class="hero-text">
+          <h2>Handmade crafts inspired by all things cute <3.</h2>
         </div>
       </div>
 
-      <main>
-        <section>
-          <div class="container">
-            <div class="product-box">
-              <a href="./ProductDetails.html?product=Original">
-                <img class="product-gallery-img center" src="../images/switch.jpg" alt="switch" width="400">
-                <p class="product-info">Switch Necklace</p>
-                <p><span class="no-bold">$2.49</span></p>
-              </a>
-            </div>
-            <div class="product-box">
-              <a href="./ProductDetails.html?rproduct=Apple">
-                <img class="product-gallery-img" src="../images/sushi.jpg" alt="sushi-charm-bracelet" width="400">
-                <p class= "product-info">Sushi Charm Bracelet</p>
-                <p><span class="no-bold">$3.49</span></p>
-              </a>
-            </div>
-            <div class="product-box">
-              <a href="./ProductDetails.html?product=Raisin">
-                <img class="product-gallery-img" src="../images/star.jpg" alt="star-charms" width="400">
-                <!--what is the difference between center and product description center-->
-                <p class="product-info">Star Charms</p>
-                <p><span class="no-bold">$2.99</span></p>
-              </a>
-            </div>
-            <div class="product-box">
-              <a href="./ProductDetails.html?product=Walnut">
-                <img class="product-gallery-img" src="../images/snowcone.jpg" alt="snowcone" width="400">
-                <p class="product-info">Snowcone Charms</p>
-                <p><span class="no-bold">$3.49</span></p>
-              </a>
-            </div>
-            <div class="product-box">
-              <a href="./ProductDetails.html?product=Double-Chocolate">
-                <img class="product-gallery-img" src="../images/boba.jpg" alt="boba" width="400">
-                <p class="product-info">Boba Charms</p>
-                <p><span class="no-bold">$3.99</span></p>
-              </a>
-            </div>
-            <div class="product-box">
-              <a href="./ProductDetails.html?product=Strawberry">
-                <img class=product-gallery-img src="../images/TurtMac.jpg" alt="turtle-macaron" width="400">
-                <p class="product-info">Mint Turtle Necklace</p>
-                <p><span class="no-bold">$3.99</span></p> <!--span just affects one line-->
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <script>
-        var balls = document.getElementsByClassName("ball");
-        document.onmousemove = function(){
-          var x = event.clientX * 100 / window.innerWidth + "%";
-          var y = event.clientY * 100 / window.innerHeight + "%";
-          //event.clientX => gets horizontal coordinate of the mouse
-          //event.clientY => gets vertical coordinate of the mouse
-          //window.innerWidth => gets browser height
-          //window.innerHeight => gets browser height
+      <section>
+        <div class="booth">
+          <!--<img class="booth" src="images/booth.jpg" alt="Hannah at her booth" width="400px"></a>-->
+        </div>
+      </section>
+    </main>
 
-          for(var i = 0; i<2; i++)
-          {
-            balls[i].style.left = x;
-            balls[i].style.top = y;
-            balls[i].style.transfrom = "translate(-"+x+",-"+y+")";
-          }
-        }
-        
-      </script>  
-      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <footer>
+      <p>Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
+      <div class="rounded-icons">
+        <a
+          href="https://www.instagram.com/kikireadscomics/"
+          class="rounded-icon"
+        >
+          <img src="images/ig.svg" alt="Instagram Logo"
+        /></a>
+        <div class="rounded-icon">
+          <a href="https://www.facebook.com/kikireadscomics">
+            <img src="images/fb.png" alt="Facebook Logo"
+          /></a>
+        </div>
+        <div class="rounded-icon">
+          <a
+            href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header"
+          >
+            <img src="images/etsy.png" alt="Etsy Logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
